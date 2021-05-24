@@ -1,0 +1,20 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+
+# creating the dataset
+data = {'Maths':85, 'Economics':95, 'French':70,
+		'OB':90, 'Statistics':80}
+Subjects = list(data.keys())
+Marks = list(data.values())
+
+fig = plt.figure(figsize = (10, 5))
+
+# creating the bar plot
+plt.bar(courses, values, color ='maroon',
+		width = 0.4)
+
+plt.xlabel("Subjects ")
+plt.ylabel("Marks obtained")
+plt.title("Marks obtained in Cycle Tests")
+plt.show()
